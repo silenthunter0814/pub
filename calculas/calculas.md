@@ -1,1 +1,1 @@
-$f(x)=\int f(x) dx
+$f(x)=\int f(x) dx$
