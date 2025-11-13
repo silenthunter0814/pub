@@ -133,4 +133,42 @@ $$ f'(x_0) = \lim_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h} \tag{2.1} $$
 
 $$ \frac{dy}{dx} = f'(g(x)) \cdot g'(x) $$
 
-例：$y = \sin(x^2)$ → $y' = \cos(x^2) \cdot 2x$
+例：$y = \sin(x^2)$ → $y' = \cos(x^2) \cdot 2x$  
+
+
+# 第3章 积分
+
+## 3.1 定积分的定义（黎曼和）
+
+将 $[a,b]$ 分成 $n$ 等份，$\Delta x = \frac{b-a}{n}$，取右端点：
+
+$$ \int_a^b f(x) dx = \lim_{n \to \infty} \sum_{i=1}^n f(a + i \Delta x) \Delta x \tag{3.1} $$
+
+---
+
+### 牛顿-莱布尼茨公式
+
+若 $F'(x) = f(x)$，则
+
+$$ \int_a^b f(x) dx = F(b) - F(a) $$
+
+---
+
+### 例题 3.1
+
+计算：$\int_0^1 x^2 dx$
+
+**解：**  
+原函数 $F(x) = \frac{1}{3} x^3$
+
+$$
+\int_0^1 x^2 dx = \left[ \frac{1}{3} x^3 \right]_0^1 = \frac{1}{3} - 0 = \frac{1}{3}
+$$
+
+---
+
+### 换元积分法
+
+令 $u = \sin x$，$du = \cos x dx$
+
+$$ \int \cos x \sin x dx = \int u du = \frac{1}{2} u^2 + C = \frac{1}{2} \sin^2 x + C $$
